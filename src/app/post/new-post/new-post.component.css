@@ -1,0 +1,31 @@
+input[type = text],input[type = email]{
+    height: 50px; 
+    padding-left: 20px;
+    width: 100%;
+ }
+textarea{
+    padding-left: 20px;
+
+}
+
+ .btn-sub{
+    color: white;
+    border: none;
+    background-color: var(--primary-color);
+}
+.btn-warning{
+    height: 48px; 
+
+    color: white;
+    border: none;
+   
+    border:none;
+    box-shadow: 0px 0px 33px -10px rgba(19, 20, 18, 0.5);
+ }
+
+ .img-preview{
+    max-height: 268px;
+ }
+ angular-editor{
+    min-height: 250px;
+ }

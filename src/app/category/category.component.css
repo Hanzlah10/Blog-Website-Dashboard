@@ -1,0 +1,11 @@
+.btn-sub{
+    color: white;
+    border: none;
+    background-color: var(--primary-color);
+}
+input[type = text],input[type = email]{
+    height: 50px; 
+    padding-left: 20px;
+    font-size: 13px;
+    width: 100%;
+ }

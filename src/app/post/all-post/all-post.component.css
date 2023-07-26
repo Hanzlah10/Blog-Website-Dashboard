@@ -1,0 +1,12 @@
+.btn-sub{
+    color: white;
+    border: none;
+    background-color: var(--primary-color);
+}
+.btn-warn{
+    height: 48px; 
+    color: white;
+    border: none;
+    border:none;
+    box-shadow: 0px 0px 33px -10px rgba(19, 20, 18, 0.5);
+ }

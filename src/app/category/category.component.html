@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 bg-secondary-theme p-5 shadow-effect">
+            <h3 class="text-center">New Categories</h3>
+            <p class="text-center mb-5"> {{formStatus}} new Categories from here ..! </p>
+            <form #f="ngForm" class="row text-center">
+                <div class="form-group col-md-10">
+                    <input #myInput [(ngModel)]="CategoryName" name="category" type="text"
+                        class="form-control  mb-3 shadow-effect p-3" placeholder="Add New Categories" required>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-block btn-info mb-3 btn-sub" (click)="onSubmit(f.value)"> {{formStatus}}
+                        Category</button>
+                    <button class="btn btn-block btn-info mb-3 btn-sub bg-warning text-white mx-2" routerLink="/">
+                        Back</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-md-4 offset-md-4 mt-5">
+        <div class="card shadow-effect">
+            <div class="card-body">
+                <div class="table-responsive-sm">
+                    <table class="table table-striped  row-border table-hover">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Category</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let data of userData | async,let i = index">
+                                <td>{{i+1}}</td>
+                                <td>{{data.category}}</td>
+                                <td>
+                                    <a name="edit" id="edit" class="btn btn-warning  mx-1"
+                                        (click)="onEdit(data.category,data.id)" role="button">Edit</a>
+                                    <a name="delete" id="delete" class="btn btn-danger mx-1" (click)="onDelete(data.id)"
+                                        role="button">Delete</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "ng-blog-app-242303"
+  },
+  "targets": {
+    "ng-blog-app-242303": {
+      "hosting": {
+        "tr": [
+          "ang-blogadmin"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

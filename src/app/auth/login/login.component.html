@@ -1,0 +1,42 @@
+<div class="container ">
+    <div class="row">
+        
+        
+        <div class="col-md-4 offset-md-4">
+            
+            <div class="card ">
+                
+                
+                <div class=" text-center text-theme bg-secondary-theme p-5 card-body shadow-effect ">
+                    <h1 class="mb-0 text-theme">
+                        Admin Login
+                    </h1>
+                    <p>
+                        Login to your Admin Account !
+                    </p>
+                    
+                    
+                    <form #loginform = ngForm  (ngSubmit)="onSubmit(loginform.value)">
+                        <div class="form-group">
+                            <input type="Email" placeholder="Email" class="form-control " name="email" ngModel #email = ngModel required email>
+                        </div>
+                        <div class="alert alert-danger" *ngIf="email.touched && email.invalid">
+                            <div *ngIf="email.errors?.['email']"> Email is invalid !</div>
+                            <div *ngIf="email.errors?.['required']"> Email is required !</div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" placeholder="Password" class="form-control mt-2 " name="password" ngModel #password = ngModel required >
+                        </div>
+                        <div class="alert alert-danger" *ngIf="password.touched && password.invalid">
+                            <div *ngIf="password.errors?.['required']"> Password cannot be empty !</div>
+                       
+                        </div>
+
+                        <button class="btn  btn-sub btn-info mb-2 form-control mt-2"> Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

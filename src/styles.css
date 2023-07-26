@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* @import 'ngx-toastr/toastr-bs4-alert'; */
+
+
+
+
+:root{
+    --primary-color: #026467;                                                      
+    --secondary-color: #E5F5EA;
+    --body-text-color:#596392;
+    --navbar-footer-color: #F9F9F9;
+}
+
+*{
+   font-family: 'Roboto';
+   font-size: 14px;
+   color: var(--body-text-color)
+}
+
+
+.nav-link{
+    color: var(--primary-color);
+ }
+
+.nav-link:hover{
+    font-weight: 600;
+    text-decoration: underline;
+ }
+
+
+.site-logo{
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color); 
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: 600;
+ }
+
+.shadow-effect{
+    border:none;
+    box-shadow: 0px 0px 33px -10px rgba(71,114,54,0.5);
+ }
+
+
+ .btn-sub{
+    height: 48px; 
+    font-size: 13px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border:none;
+    box-shadow: 0px 0px 33px -10px rgba(19, 20, 18, 0.5);
+ }
+
+ .bg-theme{
+    background-color: var(--primary-color);
+ }
+ .bg-secondary-theme{
+    background-color: var(--secondary-color);
+ }
+ .text-theme{
+    color:var(--primary-color)
+ }

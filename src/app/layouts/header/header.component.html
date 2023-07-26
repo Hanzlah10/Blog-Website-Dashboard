@@ -1,0 +1,9 @@
+<header class=" navbar navbar-expand-lg fixed-top bg-white ">
+    <div class="container justify-content-center">
+        <a routerLink="/" class="site-logo"> BLOGIFY </a> 
+     </div>
+     <div class="container justify-content-center" *ngIf="isloggedIn$ | async">
+        <a href="/login" class="me-3 link text-theme shadow-effect"> {{userEmail}} </a> 
+        <button class="btn btn-sm logout-btn btn-info bg-secondary-theme text-theme"  (click)="onClick()"> Logout </button> 
+    </div>
+ </header>

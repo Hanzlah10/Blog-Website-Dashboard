@@ -1,0 +1,17 @@
+header{
+    height: 100px;
+}
+
+
+.link{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logout-btn{
+    border:none;
+    box-shadow: 0px 0px 33px -10px rgba(19, 20, 18, 0.5);
+    color: white;
+    border: none;
+    background-color: var(--primary-color);
+}

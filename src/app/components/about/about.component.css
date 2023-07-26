@@ -1,0 +1,18 @@
+.btn-sub2{
+    color: white;
+    border: none;
+    background-color: var(--primary-color);
+}
+.heading{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: overline;
+}
+
+strong{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.card{
+border: none;
+}
