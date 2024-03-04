@@ -35,8 +35,6 @@ export class NewPostComponent {
     private toast: ToastrService,
     private route: ActivatedRoute) {
     this.loadCategoryData()
-
-
   }
 
 
@@ -134,12 +132,7 @@ export class NewPostComponent {
     // console.log(this.categories)
   }
 
-
-
-
-
-
-
+  
   //taking data from the form to store in db
   onSubmit() {
 

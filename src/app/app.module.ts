@@ -17,7 +17,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AllPostComponent } from './post/all-post/all-post.component';
 import { NewPostComponent } from './post/new-post/new-post.component';
-import {  HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { AngularEditorModule } from '@kolkov/angular-editor';
 import { EditorModule } from 'smart-webcomponents-angular/editor';
 import { getStorage,provideStorage } from '@angular/fire/storage';
